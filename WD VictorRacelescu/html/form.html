@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Victor Racelescu's Blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="form.css">
+<script src="form.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+
+<div class="w3-row">
+  <div class="navi">
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="form.html">Formular</a>
+
+  </div>
+</head>
+
+  <body class="w3-light-grey">
+    <div class="w3-content" style="max-width:49%">
+    <header class="w3-container w3-center w3-padding-32"> 
+        <br>
+        <h1><b>Form</b></h1>
+      </header>
+      <div class="w3-card-4 w3-margin w3-white">
+      <div class="w3-container">
+        <br>
+        <form action="/submit_form" method="post" enctype="multipart/form-data" style="max-width: 600px; margin: auto;">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required style="width: 100%;"><br><br>
+            
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required style="width: 100%;"><br><br>
+            
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required style="width: 100%;"><br><br>
+            
+            <label for="email">Email (Gmail):</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%;"><br><br>
+            
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required style="width: 100%;"><br><br>
+            
+            <label for="gender">Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+            
+            <label for="country">Country:</label><br><br>
+            <select id="country" name="country" required style="width: 100%;">
+                <option value="">Select</option>
+                <option value="Romania">Romania</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Germany">Germany</option>
+            </select><br><br>
+            
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4" required style="width: 100%;"></textarea><br><br>
+            
+            
+            <label for="photo">Upload Photo:</label><br>
+            <input type="file" id="photo" name="photo" accept="image/*" style="width: 100%;"><br><br>
+            
+            <input type="submit" value="Submit" style="width: 100%;">
+        </form>
+        <br>
+      </div>
+      </div>
+     
+    </div>
+</div><br>
+</div>
+
+
+      <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+        <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+        <p align="right"><b>&copy; 2024 Victor Racelescu's Blog</b></p>
+        <p></a></p>
+      </footer>
+      
+      </body>
+      </html>

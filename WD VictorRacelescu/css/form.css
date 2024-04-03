@@ -1,0 +1,117 @@
+/* The navigation bar */
+.navi {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 1000%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navi a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navi a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+/* Animation for the main blog title */
+@keyframes slideInDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.w3-container.w3-padding-32 h1 {
+  animation: slideInDown 2s ease;
+}
+
+/* Transition for menu items */
+.navi a {
+  transition: all 0.3s ease;
+}
+
+.navi a:hover {
+  color: #555; 
+  transform: scale(1.1); /* Scale up by 10% */
+  background-color: #f0f0f0; 
+}
+/* Transition for blog entries */
+.w3-card-4 {
+  transition: box-shadow 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.w3-card-4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transform: translateY(-5px); /* Move the card slightly up */
+  opacity: 0.9; /* Reduce opacity a bit */
+}
+
+/* large screens */
+@media screen and (min-width: 992px) {
+
+  .w3-col.l8 {
+      width: 65%; 
+  }
+
+  .w3-col.l4 {
+      width: 35%;
+      margin-top: 0; 
+  }
+}
+
+/* medium screens */
+@media screen and (max-width: 991px) {
+  .w3-col.l8, .w3-col.l4 {
+      width: 100%; 
+      margin-top: 20px; 
+  }
+  header h1 {
+      font-size: 24px; 
+  }
+  header p {
+      font-size: 16px; 
+  }
+  .w3-card-about img {
+      max-width: 100px; 
+  }
+  .navi a {
+      font-size: 16px; 
+  }
+}
+
+/* small screens */
+@media screen and (max-width: 768px) {
+  header h1 {
+      font-size: 20px; 
+  }
+  header p {
+      font-size: 14px; 
+  }
+  .w3-card-about img {
+      max-width: 80px;}
+  .navi a {
+      font-size: 14px; 
+}
+}
+
+
+  
